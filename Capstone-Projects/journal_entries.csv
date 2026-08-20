@@ -1,0 +1,12 @@
+journal_id,line,account,description,debit,credit
+JE-PMT-01,1,1000-CASH,Cash receipt PMT-01,12450.0,0.0
+JE-PMT-01,2,1200-AR,AR clearance for INV-100234,0.0,12450.0
+JE-PMT-02,1,1000-CASH,Cash receipt PMT-02,8899.5,0.0
+JE-PMT-02,2,1200-AR,AR clearance for INV-100235,0.0,8899.5
+JE-PMT-03,1,1000-CASH,Cash receipt PMT-03,4950.25,0.0
+JE-PMT-03,2,1200-AR,AR clearance for INV-100236,0.0,4950.25
+JE-PMT-04,1,1000-CASH,Cash receipt PMT-04,4000.0,0.0
+JE-PMT-04,2,1200-AR,"AR clearance for INV-100237, INV-100238",0.0,5200.0
+JE-PMT-04,3,6900-VARIANCE-SUSPENSE,Short-pay variance for PMT-04,1200.0,0.0
+JE-PMT-05,1,1000-CASH,Cash receipt PMT-05,14950.0,0.0
+JE-PMT-05,2,1200-AR,AR clearance for INV-100239,0.0,14950.0

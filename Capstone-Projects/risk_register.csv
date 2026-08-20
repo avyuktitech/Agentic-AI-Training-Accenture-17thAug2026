@@ -1,0 +1,6 @@
+risk_id,agent,category,description,likelihood,severity,mitigation,heat_score
+RSK-001,Capstone1_RemittanceIngestion,data,Malformed/incomplete ERP rows silently mis-extracted,3,3,Validation agent + mandatory-field schema check before finalize,9
+RSK-002,Capstone1_RemittanceIngestion,model,Regex-based extractor misses non-standard invoice formats,4,2,Track extraction confidence; expand regex/NER coverage from HITL corrections,8
+RSK-003,Capstone2_PaymentMatching,model,Smart-match model trained on small synthetic set may not generalize,3,4,Retrain periodically on labeled production HITL decisions; monitor drift,12
+RSK-004,Capstone2_PaymentMatching,operational,Partial-payment short-pay variance not routed to collections automatically,3,3,Add downstream workflow trigger when variance exceeds materiality threshold,9
+RSK-005,Capstone2_PaymentMatching,compliance,Auto-approved matches lack a documented approval trail for audit,2,4,Persist observability log to immutable store; retain per SOX record-retention policy,8
